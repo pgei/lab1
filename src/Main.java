@@ -30,6 +30,9 @@ public class Main {
         //Aufgabe 2.2
         System.out.println(zahlenanalyse.minnumber(zahlen));
 
+        //Aufgabe 2.3
+        System.out.println(zahlenanalyse.maxsum(zahlen));
+
     }
 
     public static void printArray(int[] array) {
