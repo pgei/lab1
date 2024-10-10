@@ -8,6 +8,9 @@ public class Main {
         int[] durchgefallen = notenanalyse.durchgefallen(noten);
         printArray(durchgefallen);
 
+        //Aufgabe 1.2
+        System.out.println(notenanalyse.durchschnitt(noten));
+
     }
 
     public static void printArray(int[] array) {
