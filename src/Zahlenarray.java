@@ -18,19 +18,36 @@ public class Zahlenarray {
 
     public int maxsum(int[] zahlen) {
         int min = minnumber(zahlen);
-        int sum = 0;
+        int summe = 0;
         int count = 0;
         for (int i : zahlen) {
             if (i != min) {
-                sum += i;
+                summe += i;
                 count++;
             }
         }
         //Minimale Zahl dazuaddieren falls diese mehr als einmal im Array vorkommt
         if (count != zahlen.length-1) {
-            sum += min * (zahlen.length-1-count);
+            summe += min * (zahlen.length-1-count);
         }
-        return sum;
+        return summe;
+    }
+
+    public int minsum(int[] zahlen) {
+        int max = maxnumber(zahlen);
+        int summe = 0;
+        int count = 0;
+        for (int i : zahlen) {
+            if (i != max) {
+                summe += i;
+                count++;
+            }
+        }
+        //Maximale Zahl dazuaddieren falls diese mehr als einmal im Array vorkommt
+        if (count != zahlen.length-1) {
+            summe += max * (zahlen.length-1-count);
+        }
+        return summe;
     }
 
 }
