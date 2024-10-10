@@ -2,6 +2,8 @@ public class Main {
 
     public static void main(String[]  args) {
 
+        //todo: Tests für Aufgaben durchführen + Kommentare
+
         int[] noten = {29, 37, 38, 41, 84, 67};
         Noten notenanalyse = new Noten();
 
@@ -18,6 +20,15 @@ public class Main {
 
         //Aufgabe 1.4
         System.out.println(notenanalyse.maxgerundet(noten));
+
+        int[] zahlen = {4, 8, 3, 10, 17};
+        Zahlenarray zahlenanalyse = new Zahlenarray();
+
+        //Aufgabe 2.1
+        System.out.println(zahlenanalyse.maxnumber(zahlen));
+
+        //Aufgabe 2.2
+        System.out.println(zahlenanalyse.minnumber(zahlen));
 
     }
 
