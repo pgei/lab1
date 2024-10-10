@@ -15,17 +15,26 @@ public class Noten {
         for (int i : noten) {
             summe += i;
         }
-        //Double abrunden auf 2 Dezimalstellen
+        //Double runden auf 2 Dezimalstellen
         return Math.round(summe/noten.length * 100.0)/100.0;
     }
 
-    public int[] abgerundet(int[] noten) {
+    public int[] gerundet(int[] noten) {
         for (int i = 0; i < noten.length; i++) {
             if (noten[i] > 37 && noten[i] % 5 >= 3) {
                 noten[i] += 5 - (noten[i] % 5);
             }
         }
         return noten;
+    }
+
+    public int maxgerundet(int[] noten) {
+        int[] gerundet = gerundet(noten);
+        int max = 0;
+        for (int i : gerundet) {
+            if (i > max) max = i;
+        }
+        return max;
     }
 
 }

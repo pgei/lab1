@@ -1,6 +1,7 @@
 public class Main {
 
     public static void main(String[]  args) {
+
         int[] noten = {29, 37, 38, 41, 84, 67};
         Noten notenanalyse = new Noten();
 
@@ -12,8 +13,11 @@ public class Main {
         System.out.println(notenanalyse.durchschnitt(noten));
 
         //Aufgabe 1.3
-        int[] gerundet = notenanalyse.abgerundet(noten);
+        int[] gerundet = notenanalyse.gerundet(noten);
         printArray(gerundet);
+
+        //Aufgabe 1.4
+        System.out.println(notenanalyse.maxgerundet(noten));
 
     }
 
