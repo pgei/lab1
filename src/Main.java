@@ -11,6 +11,10 @@ public class Main {
         //Aufgabe 1.2
         System.out.println(notenanalyse.durchschnitt(noten));
 
+        //Aufgabe 1.3
+        int[] gerundet = notenanalyse.abgerundet(noten);
+        printArray(gerundet);
+
     }
 
     public static void printArray(int[] array) {

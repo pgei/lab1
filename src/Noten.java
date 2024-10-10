@@ -19,8 +19,13 @@ public class Noten {
         return Math.round(summe/noten.length * 100.0)/100.0;
     }
 
-
-
-
+    public int[] abgerundet(int[] noten) {
+        for (int i = 0; i < noten.length; i++) {
+            if (noten[i] > 37 && noten[i] % 5 >= 3) {
+                noten[i] += 5 - (noten[i] % 5);
+            }
+        }
+        return noten;
+    }
 
 }
