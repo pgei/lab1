@@ -14,6 +14,12 @@ public class Arrayrechnen {
         return int2array(differenz);
     }
 
+    public int[] multiplikation(int[] array, int zweitezahl) {
+        int erstezahl = array2int(array);
+        int multiplikation = erstezahl * zweitezahl;
+        return int2array(multiplikation);
+    }
+
     private int array2int(int[] array) {
         StringBuilder zahl = new StringBuilder();
         for (int i : array) {

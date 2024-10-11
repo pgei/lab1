@@ -5,6 +5,7 @@ public class Main {
         //todo: Tests für Aufgaben durchführen + Kommentare
         //todo: Aufgabe 3 fragen ob Differenz als Absolutwert okay
         //todo: Aufgabe 3 fragen ob int-Array Rückgabewert sein soll
+        //todo: Aufgabe 3 "Die Zahlen haben die gleiche Anzahl an Ziffern", Konsequenz?
 
         int[] noten = {29, 37, 38, 41, 84, 67};
         Noten notenanalyse = new Noten();
@@ -42,6 +43,7 @@ public class Main {
         int[] zweitezahl = {8, 7, 0, 0, 0, 0, 0, 0, 0};
         int[] drittezahl = {8, 3, 0, 0, 0, 0, 0, 0, 0};
         int[] viertezahl = {5, 4, 0, 0, 0, 0, 0, 0, 0};
+        int[] funftezahl = {2, 3, 6, 0, 0, 0, 0, 0, 0};
         Arrayrechnen rechnen = new Arrayrechnen();
 
         //Aufgabe 3.1
@@ -51,6 +53,10 @@ public class Main {
         //Aufgabe 3.2
         int[] differenz = rechnen.differenz(drittezahl, viertezahl);
         printArray(differenz);
+
+        //Aufgabe 3.3
+        int[] multiplikation = rechnen.multiplikation(funftezahl, 2);
+        printArray(multiplikation);
 
     }
 
