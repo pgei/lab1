@@ -36,6 +36,14 @@ public class Main {
         //Aufgabe 2.4
         System.out.println(zahlenanalyse.minsum(zahlen));
 
+        int[] erstezahl = {1, 3, 0, 0, 0, 0, 0, 0, 0};
+        int[] zweitezahl = {8, 7, 0, 0, 0, 0, 0, 0, 0};
+        Arrayrechnen rechnen = new Arrayrechnen();
+
+        //Aufgabe 3.1
+        int[] summe = rechnen.summe(erstezahl, zweitezahl);
+        printArray(summe);
+
     }
 
     public static void printArray(int[] array) {
