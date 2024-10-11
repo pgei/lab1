@@ -58,6 +58,9 @@ public class Main {
         int[] multiplikation = rechnen.multiplikation(funftezahl, 2);
         printArray(multiplikation);
 
+        //Aufgabe 3.4
+        int[] division = rechnen.division(funftezahl, 2);
+        printArray(division);
     }
 
     public static void printArray(int[] array) {

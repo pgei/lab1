@@ -20,6 +20,13 @@ public class Arrayrechnen {
         return int2array(multiplikation);
     }
 
+    public int[] division(int[] array, int zweitezahl) {
+        int erstezahl = array2int(array);
+        int division = erstezahl / zweitezahl;
+        return int2array(division);
+    }
+
+    //Hilfsmethode die Array in Zahl umwandelt
     private int array2int(int[] array) {
         StringBuilder zahl = new StringBuilder();
         for (int i : array) {
@@ -28,6 +35,7 @@ public class Arrayrechnen {
         return Integer.parseInt(zahl.toString());
     }
 
+    //Hilfsmethode die Zahl in Array umwandelt
     private int[] int2array(int zahl) {
         String zahlstring = Integer.toString(zahl);
         int[] array = new int[zahlstring.length()];
@@ -35,6 +43,5 @@ public class Arrayrechnen {
             array[k] = Integer.parseInt(String.valueOf(zahlstring.charAt(k)));
         }
         return array;
-     }
-
+    }
 }
