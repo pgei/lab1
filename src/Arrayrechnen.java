@@ -7,6 +7,13 @@ public class Arrayrechnen {
         return int2array(summe);
     }
 
+    public int[] differenz(int[] arrayeins, int[] arrayzwei) {
+        int erstezahl = array2int(arrayeins);
+        int zweitezahl = array2int(arrayzwei);
+        int differenz = Math.abs(erstezahl - zweitezahl);
+        return int2array(differenz);
+    }
+
     private int array2int(int[] array) {
         StringBuilder zahl = new StringBuilder();
         for (int i : array) {

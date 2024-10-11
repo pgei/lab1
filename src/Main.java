@@ -3,6 +3,8 @@ public class Main {
     public static void main(String[]  args) {
 
         //todo: Tests für Aufgaben durchführen + Kommentare
+        //todo: Aufgabe 3 fragen ob Differenz als Absolutwert okay
+        //todo: Aufgabe 3 fragen ob int-Array Rückgabewert sein soll
 
         int[] noten = {29, 37, 38, 41, 84, 67};
         Noten notenanalyse = new Noten();
@@ -38,11 +40,17 @@ public class Main {
 
         int[] erstezahl = {1, 3, 0, 0, 0, 0, 0, 0, 0};
         int[] zweitezahl = {8, 7, 0, 0, 0, 0, 0, 0, 0};
+        int[] drittezahl = {8, 3, 0, 0, 0, 0, 0, 0, 0};
+        int[] viertezahl = {5, 4, 0, 0, 0, 0, 0, 0, 0};
         Arrayrechnen rechnen = new Arrayrechnen();
 
         //Aufgabe 3.1
         int[] summe = rechnen.summe(erstezahl, zweitezahl);
         printArray(summe);
+
+        //Aufgabe 3.2
+        int[] differenz = rechnen.differenz(drittezahl, viertezahl);
+        printArray(differenz);
 
     }
 
