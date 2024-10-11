@@ -1,20 +1,27 @@
 public class Arrayrechnen {
 
-    public int[] summe(int[] erstezahl, int[] zweitezahl) {
-        StringBuilder ersterstring = new StringBuilder();
-        StringBuilder zweiterstring = new StringBuilder();
-        for (int i : erstezahl) {
-            ersterstring.append(i);
-        }
-        for (int j : zweitezahl) {
-            zweiterstring.append(j);
-        }
-        String summe = Integer.toString(Integer.parseInt(ersterstring.toString())+Integer.parseInt(zweiterstring.toString()));
-        int[] output = new int[summe.length()];
-        for (int k = 0; k < summe.length(); k++) {
-            output[k] = Integer.parseInt(String.valueOf(summe.charAt(k)));
-        }
-        return output;
+    public int[] summe(int[] arrayeins, int[] arrayzwei) {
+        int erstezahl = array2int(arrayeins);
+        int zweitezahl = array2int(arrayzwei);
+        int summe = erstezahl+zweitezahl;
+        return int2array(summe);
     }
+
+    private int array2int(int[] array) {
+        StringBuilder zahl = new StringBuilder();
+        for (int i : array) {
+            zahl.append(i);
+        }
+        return Integer.parseInt(zahl.toString());
+    }
+
+    private int[] int2array(int zahl) {
+        String zahlstring = Integer.toString(zahl);
+        int[] array = new int[zahlstring.length()];
+        for (int k = 0; k < zahlstring.length(); k++) {
+            array[k] = Integer.parseInt(String.valueOf(zahlstring.charAt(k)));
+        }
+        return array;
+     }
 
 }
