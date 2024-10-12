@@ -1,6 +1,6 @@
 public class Main {
 
-    public static void main(String[]  args) {
+    public static void main(String[] args) {
 
         //todo: Tests für Aufgaben durchführen + Kommentare
         //todo: Aufgabe 3 fragen ob Differenz als Absolutwert okay
@@ -63,7 +63,7 @@ public class Main {
         int[] division = rechnen.division(funftezahl, 2);
         printArray(division);
 
-        int[] tastaturen = {40, 35, 70, 15, 45};
+        int[] tastaturen = {40, 39, 70, 15, 45};
         int[] usb = {20, 15, 40, 15};
         ElektronikShop shop = new ElektronikShop(tastaturen, usb);
 
@@ -76,6 +76,8 @@ public class Main {
         //Aufgabe 4.3
         System.out.println(shop.maxbudgetLaufwerk(30));
 
+        //Aufgabe 4.4
+        System.out.println(shop.maxGeldbetrag(58));
     }
 
     public static void printArray(int[] array) {
@@ -88,5 +90,4 @@ public class Main {
         }
         System.out.println("]");
     }
-
 }
