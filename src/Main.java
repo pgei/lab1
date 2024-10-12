@@ -61,6 +61,14 @@ public class Main {
         //Aufgabe 3.4
         int[] division = rechnen.division(funftezahl, 2);
         printArray(division);
+
+        int[] tastaturen = {40, 35, 70, 15, 45};
+        int[] usb = {20, 15, 40, 15};
+        ElektronikShop shop = new ElektronikShop(tastaturen, usb);
+
+        //Aufgabe 4.1
+        System.out.println(shop.billigsteTastatur());
+
     }
 
     public static void printArray(int[] array) {
