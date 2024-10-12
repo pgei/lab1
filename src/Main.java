@@ -73,6 +73,9 @@ public class Main {
         //Aufgabe 4.2
         System.out.println(shop.teuersterGegenstand());
 
+        //Aufgabe 4.3
+        System.out.println(shop.maxbudgetLaufwerk(30));
+
     }
 
     public static void printArray(int[] array) {
