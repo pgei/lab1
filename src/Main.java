@@ -6,6 +6,7 @@ public class Main {
         //todo: Aufgabe 3 fragen ob Differenz als Absolutwert okay
         //todo: Aufgabe 3 fragen ob int-Array Rückgabewert sein soll
         //todo: Aufgabe 3 "Die Zahlen haben die gleiche Anzahl an Ziffern", Konsequenz?
+        //todo: Aufgabe 4 soll Fehlerbehandlung eingebaut sein (z.B. min von Int-Array leer)
 
         int[] noten = {29, 37, 38, 41, 84, 67};
         Noten notenanalyse = new Noten();
@@ -68,6 +69,9 @@ public class Main {
 
         //Aufgabe 4.1
         System.out.println(shop.billigsteTastatur());
+
+        //Aufgabe 4.2
+        System.out.println(shop.teuersterGegenstand());
 
     }
 

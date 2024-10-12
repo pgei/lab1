@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class ElektronikShop {
 
     int[] tastaturen;
@@ -9,11 +11,14 @@ public class ElektronikShop {
     }
 
     public int billigsteTastatur() {
-        int min = Integer.MAX_VALUE;
-        for (int i : this.tastaturen) {
-            if (i < min) min = i;
-        }
-        return min;
+        return Arrays.stream(this.tastaturen).min().getAsInt();
     }
+
+    public int teuersterGegenstand() {
+        int max_tastaturen = Arrays.stream(this.tastaturen).max().getAsInt();
+        int max_usb = Arrays.stream(this.usb_laufwerke).max().getAsInt();
+        return Math.max(max_tastaturen, max_usb);
+    }
+
 
 }
