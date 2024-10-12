@@ -1,5 +1,6 @@
 public class Zahlenarray {
 
+    //Methode welche die maximale Zahl in gegebenem Array zurückgibt
     public int maxnumber(int[] zahlen) {
         int max = 0;
         for (int i : zahlen) {
@@ -8,6 +9,7 @@ public class Zahlenarray {
         return max;
     }
 
+    //Methode welche die minimale Zahl in gegebenem Array zurückgibt
     public int minnumber(int[] zahlen) {
         int min = Integer.MAX_VALUE;
         for (int i : zahlen) {
@@ -16,6 +18,7 @@ public class Zahlenarray {
         return min;
     }
 
+    //Methode welche die maximale Summe von allen außer einer Zahl in gegebenem Array zurückgibt
     public int maxsum(int[] zahlen) {
         int min = minnumber(zahlen);
         int summe = 0;
@@ -26,13 +29,14 @@ public class Zahlenarray {
                 count++;
             }
         }
-        //Minimale Zahl dazuaddieren falls diese mehr als einmal im Array vorkommt
+        //Minimale Zahl dazuaddieren, falls diese mehr als einmal im Array vorkommt
         if (count != zahlen.length-1) {
             summe += min * (zahlen.length-1-count);
         }
         return summe;
     }
 
+    //Methode welche die minimale Summe von allen außer einer Zahl in gegebenem Array zurückgibt
     public int minsum(int[] zahlen) {
         int max = maxnumber(zahlen);
         int summe = 0;
@@ -43,7 +47,7 @@ public class Zahlenarray {
                 count++;
             }
         }
-        //Maximale Zahl dazuaddieren falls diese mehr als einmal im Array vorkommt
+        //Maximale Zahl dazuaddieren, falls diese mehr als einmal im Array vorkommt
         if (count != zahlen.length-1) {
             summe += max * (zahlen.length-1-count);
         }
